@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Modifications and updates started on 2018/09/27, by programmer Jonn Alves, about the Naville Brasil contract.
+  -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:paddingStart="5dp"
+    android:text="celula"
+    android:textAppearance="?android:attr/textAppearanceListItem" />

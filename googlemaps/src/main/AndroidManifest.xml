@@ -1,0 +1,28 @@
+<!--
+  ~ Copyright (c) Developed by John Alves at 2018/10/30.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="spyrecorder.com.googlemaps">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <receiver
+            android:name=".Broadcast.BCReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>
